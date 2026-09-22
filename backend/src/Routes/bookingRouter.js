@@ -5,7 +5,7 @@ import{
     getBookingDetails,getUserBookings,createOrder,verifyPayment
 } from "../Controllers/bookingController.js"
 
-import{protect} from "../controllers/authController.js"
+import{protect} from "../Controllers/authController.js"
 
 bookingRouter.get("/",protect,getUserBookings);
 bookingRouter.get("/:bookingId",protect,getBookingDetails);
